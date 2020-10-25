@@ -40,7 +40,7 @@ pipeline {
             steps {
             	dir("recommendation") {
 					sh """
-						mvn clean package
+						mvn clean package -DskipTests
 					"""
 				}
             }
@@ -53,7 +53,7 @@ pipeline {
             	dir("recommendation/target") {
 					sh """
 						oc project jeff
-						oc start build bc/recommendation --from-file recommendation-0.0.1-SNAPSHOT.jar -F
+						oc start-build bc/recommendation --from-file recommendation-0.0.1-SNAPSHOT.jar -F
 					"""
 				}
 			}
