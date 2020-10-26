@@ -7,7 +7,7 @@
 stage('Clone Source Code') {
   steps {
             	echo 'Clone Source Code ...'
-				      git branch: 'main', url: 'https://github.com/j3ffk3/nccu-lab-2020.git'
+		git branch: 'main', url: 'https://github.com/j3ffk3/nccu-lab-2020.git'
          }
 }
 ```
