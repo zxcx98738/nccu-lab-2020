@@ -1,0 +1,66 @@
+<div class="ui-g ui-g-nopad">
+  <div class="ui-g-12 ui-g-nopad tittle">
+    <div class="ui-g-12 ui-g-nopad ">
+      <div class="ui-g-9">
+        <h1><i class="fa fa-credit-card"></i> &nbsp;NCCU CI/CD Lab</h1>
+      </div>
+      <div class="ui-g-3">
+        <h1>學員作品:
+          <p-autoComplete [(ngModel)]="text" [suggestions]="results" (completeMethod)="search($event)"
+            (onSelect)='handleDropdown($event)' [dropdown]="true"></p-autoComplete>
+        </h1>
+      </div>
+
+    </div>
+  </div>
+  <div class="ui-g-12 ui-g-nopad">&nbsp;</div>
+  <div class="ui-g-1 ui-g-nopad"></div>
+  <div class="ui-g-10 ui-g-nopad">
+    <h1>{{text}} 的信用卡推薦網站</h1>
+    <p-panel header="信用卡清單">
+      <p-table [columns]="cols" [value]="cards" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th *ngFor="let col of columns">
+              {{col.header}}
+            </th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr>
+            <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+
+    </p-panel>
+  </div>
+  <div class="ui-g-1 ui-g-nopad"></div>
+  <div class="ui-g-12 ui-g-nopad">&nbsp;</div>
+  <div class="ui-g-1 ui-g-nopad"></div>
+  <div class="ui-g-10 ui-g-nopad" *ngIf="recCards.length>0">
+    <p-panel header="為您推薦">
+      <p-table [columns]="recCols" [value]="recCards" [paginator]="true" [rows]="3" [showCurrentPageReport]="true"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th *ngFor="let col of columns">
+              {{col.header}}
+            </th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr>
+            <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-panel>
+  </div>
+  <div class="ui-g-1 ui-g-nopad"></div>
+</div>
