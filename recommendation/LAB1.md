@@ -45,6 +45,8 @@ oc set env dc/recommendation TZ=Asia/Taipei
 oc set env dc/recommendation GC_MAX_METASPACE_SIZE=500
 # 設定語系
 oc set env dc/recommendation LC_ALL=en_US.utf8
+# 佈署
+oc start-build bc/recommendation --from-file ./target/recommendation-0.0.1-SNAPSHOT.jar
 ```
 
 8.至以下網頁右上角輸入你的學號，查看推薦內容是否出現，若出現則表示LAB1 已完成
