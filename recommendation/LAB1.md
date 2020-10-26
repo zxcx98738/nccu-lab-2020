@@ -5,6 +5,7 @@
 ```
 http://credit-card-web-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/
 ```
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab-before.PNG)
 
 2.抓取程式碼至你的工作機  
 3.單元測試
@@ -45,3 +46,4 @@ oc set env dc/recommendation LC_ALL=en_US.utf8
 ```
 http://credit-card-web-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/
 ```
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab-.PNG)
