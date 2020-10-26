@@ -29,7 +29,7 @@ pipeline {
             steps {
             	dir("recommendation") {
 					sh """
-						mvn sonar:sonar -Dsonar.projectKey=recommendation-jeff -Dsonar.projectName=jeff-recommendation
+						mvn clean package sonar:sonar -Dsonar.projectKey=recommendation-jeff -Dsonar.projectName=jeff-recommendation
 					"""
 				}
             }
