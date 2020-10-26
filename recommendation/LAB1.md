@@ -1,6 +1,6 @@
 
 # LAB1 手動佈署推薦服務
-手動佈署推薦服務，體驗一下程式碼集成、佈署的繁瑣步驟吧!
+手動佈署推薦服務，體驗一下程式碼集成、佈署的繁瑣步驟吧!  
 1.先至以下網頁右上角輸入你的學號，可以看到目前有的信用卡產品，但下方還沒有推薦結果顯示，推薦結果要在你部署完成後才會顯示。
 ```
 http://credit-card-web-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/
