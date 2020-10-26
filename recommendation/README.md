@@ -36,5 +36,6 @@
 | 有其他優惠  | 100  |
 
 ## LAB1-手動佈署推薦微服務 
-
+https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB1.md
 ## LAB2-為推薦微服務建立CI/CD Pipeline
+https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB2.md
