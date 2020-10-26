@@ -1,4 +1,4 @@
-# credit-card
+# credit-card (信用卡微服務)
 
 信用卡微服務，基於Spring boot框架開發，提供新增/查詢/修改/刪除信用卡產品之功能。  
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/credit-card-svc.PNG)
