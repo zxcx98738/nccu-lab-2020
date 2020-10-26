@@ -24,7 +24,7 @@ mvn clean package -DskipTests
 
 6.佈署
 - 登入OpenShift
-- 
+- 佈署應用程式
 ```
 # 推薦
 oc new-build --name=recommendation openjdk-11-rhel7:latest --binary=true
