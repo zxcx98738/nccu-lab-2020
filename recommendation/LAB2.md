@@ -1,8 +1,11 @@
 
 # LAB2 設定CI/CD Pipeline
-自動化程式碼集成、佈署的流程，在此LAB擬將修改recommendation\src\main\resources目錄下既有的 Jenkinsfile 完成CI/CD 流程。 
+在此LAB我們將自動化程式碼集成、佈署的流程，打造一條自動化且包含LAB1之單元測試、程式碼品質掃描、建置、佈署之流程。 
 
-1.利用文字編輯器打開 Jenkinsfile
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
+
+## 設定 Pipeline
+1.利用文字編輯器打開 recommendation\src\main\resources目錄下既有的 Jenkinsfile
 2.修改 Stage1 Clone Source Code 下的 url 參數改為你git的位置，範例如下
 ```
 stage('Clone Source Code') {
@@ -88,5 +91,9 @@ spec:
 oc create -f pipeline.yaml
 ```
 9.進入OpenShift 點選 start build 按鈕。
-
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-start-build.PNG)
 10.可以看到流程正常執行完畢。 
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
+
+## 設定Webhook
+再有Pipeline的情況下上版還是需要用手去按，整合Webhook 後
