@@ -24,15 +24,15 @@ mvn clean package -DskipTests
 
 6.佈署
 - 登入OpenShift
-- 佈署應用程式
+- 逐行執行以下指令，佈署應用程式
 ```
-# 推薦
+# 新增 Build Config
 oc new-build --name=recommendation openjdk-11-rhel7:latest --binary=true
-# 產生dc
+# 產生 Deployment Config
 oc new-app recommendation  --allow-missing-imagestream-tags
-# 產生service
+# 產生 service
 oc expose dc  recommendation --port 8080 
-# 產生route
+# 產生 route 供外部應用存取
 oc expose svc recommendation
 # 設定為台灣時間
 oc set env dc/recommendation TZ=Asia/Taipei
