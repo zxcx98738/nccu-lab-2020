@@ -8,9 +8,9 @@ http://credit-card-web-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c
 ```
 
 ## 佈署方式
-佈署前請先安裝nodejs、angular cli
-1.使用 git clone nccu-lab-2020至本機，並切換至 credit-card-web 目錄3
-2.安裝npm 套件
+佈署前請先安裝nodejs、angular cli  
+1.使用 git clone nccu-lab-2020至本機，並切換至 credit-card-web 目錄  
+2.安裝npm 套件  
 ```
 npm i 
 ```
