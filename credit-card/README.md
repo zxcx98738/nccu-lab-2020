@@ -8,6 +8,11 @@ http://credit-card-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c
 ```
 
 ## H2 Console
+JDBC URL
+```
+jdbc:h2:mem:testdb
+```
+Console url
 ```
 http://credit-card-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/h2-console/
 ```
