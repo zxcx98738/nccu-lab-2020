@@ -16,13 +16,18 @@ mvn test
 ```
 mvn clean package sonar:sonar -Dsonar.projectKey=recommendation-${你的學號} -Dsonar.projectName=recommendation-${你的學號}
 ```
+5.查看程式碼品質掃描結果
+```
+http://sonarqube-nccu-cicd.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/
+```
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab1-scan.PNG)
 
-5.編譯Java程式
+6.編譯Java程式
 ```
 mvn clean package -DskipTests
 ```
 
-6.佈署
+7.佈署
 - 登入OpenShift
 - 逐行執行以下指令，佈署應用程式
 ```
@@ -42,7 +47,7 @@ oc set env dc/recommendation GC_MAX_METASPACE_SIZE=500
 oc set env dc/recommendation LC_ALL=en_US.utf8
 ```
 
-7.至以下網頁右上角輸入你的學號，查看推薦內容是否出現，若出現則表示LAB1 已完成
+8.至以下網頁右上角輸入你的學號，查看推薦內容是否出現，若出現則表示LAB1 已完成
 ```
 http://credit-card-web-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/
 ```
