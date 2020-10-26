@@ -2,8 +2,7 @@
 2020年政大實驗課程使用的Repository
 
 ## Lab 架構如下圖所示
-![Image configmap](imgs/lab-env.PNG)
-
+![Image lab-env](imgs/lab-env.PNG)
 ### credit-card (信用卡微服務)
 - 提供新增/修改/查詢/刪除信用卡產品之功能。
 - 此模組將由講師預先為同學準備好。
@@ -13,5 +12,7 @@
 ### credit-card-web (前端應用)
 - 本前端頁面分為上下兩部分。
 - 上部分: 顯示信用卡產品。
-- 下部分: 顯示推薦結果。
+![Image-web-upper-part](imgs/web-upper-part.PNG)
+- 下部分: 顯示推薦結果以及各個評分項目的得分。
+![Image-web-lower-part](imgs/web-lower-part.PNG)
 - 此模組將由講師預先為同學準備好。
