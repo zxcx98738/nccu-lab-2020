@@ -29,7 +29,7 @@ pipeline {
             steps {
             	dir("recommendation") {
 					sh """
-						mvn clean package sonar:sonar -Dsonar.projectKey=recommendation-jeff -Dsonar.projectName=jeff-recommendation
+						mvn clean package sonar:sonar -Dsonar.projectKey=recommendation-jeff -Dsonar.projectName=recommendation-jeff
 					"""
 				}
             }
@@ -47,7 +47,7 @@ pipeline {
         }
 		
 		
-		// Stage5 Build Image
+		// Stage5 Build Image & Deploy
         stage('Build Image & Deploy') {
             steps {
             	dir("recommendation/target") {
