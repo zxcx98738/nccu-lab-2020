@@ -1,0 +1,14 @@
+kind: "BuildConfig"
+apiVersion: "build.openshift.io/v1"
+metadata:
+  name: "recommendation-pipeline"
+spec:
+  source:
+    contextDir: recommendation
+    git:
+      uri: "https://github.com/j3ffk3/nccu-lab-2020.git"
+      ref: "main"
+  strategy:
+    jenkinsPipelineStrategy:
+      type: JenkinsPipeline
+      jenkinsfilePath: /src/main/resources/Jenkinsfile
