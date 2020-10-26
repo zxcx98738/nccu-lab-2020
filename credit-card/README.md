@@ -26,15 +26,15 @@ oc project nccu-lab2-common
 5.佈署至RedHat OpenShift
 - 產生 build config，基底映像檔使用 openjdk-11
 ```
-oc new-build --name=credit-card-web openjdk-11-rhel7:latest --binary=true
+oc new-build --name=credit-card openjdk-11-rhel7:latest --binary=true
 ```
 - 產生 deploymnet config
 ```
-oc new-app credit-card-web --allow-missing-imagestream-tags
+oc new-app credit-card --allow-missing-imagestream-tags
 ```
 - 產生 route 供外部存取
 ```
-oc expose dc credit-card-web --port 8080 
+oc expose dc credit-card --port 8080 
 ```
 - 設定語系、時間
 ```
