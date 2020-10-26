@@ -6,7 +6,7 @@
 http://credit-card-web-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/
 ```
 
-2.抓取程式碼至你的工作機
+2.抓取程式碼至你的工作機  
 3.單元測試
 ```
 mvn test
