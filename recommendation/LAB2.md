@@ -66,3 +66,25 @@ stage('Build Image & Deploy') {
 	}
 }
 ```
+7.利用文字編輯器打開 recommendation\pipeline.yaml，將${GIT_URL}取代為你git的位置後存檔。
+```
+kind: "BuildConfig"
+apiVersion: "build.openshift.io/v1"
+metadata:
+  name: "recommendation-pipeline"
+spec:
+  source:
+    contextDir: recommendation
+    git:
+      uri: "${GIT_URL}"
+      ref: "main"
+  strategy:
+    jenkinsPipelineStrategy:
+      type: JenkinsPipeline
+      jenkinsfilePath: /src/main/resources/Jenkinsfile
+```
+8.於 OpenShift 上建立 Pipeline
+```
+oc create -f pipeline.yaml
+```
+
