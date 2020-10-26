@@ -39,3 +39,8 @@
 https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB1.md
 ## LAB2-為推薦微服務建立CI/CD Pipeline
 https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB2.md
+## 小遊戲
+- 依照組別討論一下，依照大家的生活經驗來說，以上四個評分項目的佔比是否有些可以提高，有些可以降低呢?
+- 討論完成後，嘗試調整每個評分項目的百分比。
+- 並將程式碼上傳至github.
+- CI/CD流程將自動幫你集成/佈署最新的程式碼。
