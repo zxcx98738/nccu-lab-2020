@@ -5,8 +5,10 @@
 
 推薦預設規則如下:
 - 國內現金回饋:  
-Age           | Time  | Food | Gold | Requirement
-------------  | ----  | ---  | ---  | ---
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 - 海外現金回饋:
 - 年費:
 - 其他優惠: 
