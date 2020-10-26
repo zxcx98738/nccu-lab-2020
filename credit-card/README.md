@@ -13,5 +13,13 @@ http://credit-card-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c
 ```
 
 ## 佈署方式
-1.使用 git clone nccu-lab-2020至本機，並切換至 credit-card 目錄
-2.
+1.使用 git clone nccu-lab-2020至本機，並切換至 credit-card 目錄  
+2.登入OpenShift  
+3.切換目錄至 nccu-lab2-common
+```
+oc project nccu-lab2-common
+```
+4.
+```
+oc new-build --name=credit-card openjdk-11-rhel7:latest --binary=true
+```
