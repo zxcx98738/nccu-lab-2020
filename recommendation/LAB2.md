@@ -107,4 +107,7 @@ oc describe bc/recommendation-pipeline
 ```
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-webhook1.PNG)
 3.將此API設定至GitHub，GitHub會於程式碼有異動時自動呼叫Pipeline的API啟動CI/CD流程。
+至github 點選設定 > webhook 貼上步驟1得到的url，即完成設定。
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-webhook2.PNG)
+
 
