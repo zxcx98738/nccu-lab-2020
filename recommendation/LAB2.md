@@ -38,3 +38,31 @@ stage('Code Quality Analysis') {
 	}
 }
 ```
+5.查看 Stage4 Code Quality Analysis ，為LAB1 編譯Java 的指令。
+```
+// Stage4 Build Jar file
+stage('Build Jar file') {
+	steps {
+            	dir("recommendation") {
+			sh """
+				mvn clean package -DskipTests
+			"""
+		}
+	}
+}
+```
+6.查看 Stage5 Build Image & Deploy ，為LAB1 佈署應用的指令，取代${你的學號}的部分為你的學號。
+
+```
+// Stage5 Build Image & Deploy
+stage('Build Image & Deploy') {
+	steps {
+            	dir("recommendation/target") {
+			sh """
+				oc project ${你的學號}
+				oc start-build bc/recommendation --from-file recommendation-0.0.1-SNAPSHOT.jar -F
+			"""
+		}
+	}
+}
+```
