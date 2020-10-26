@@ -87,4 +87,6 @@ spec:
 ```
 oc create -f pipeline.yaml
 ```
+9.進入OpenShift 點選 start build 按鈕。
 
+10.可以看到流程正常執行完畢。 
