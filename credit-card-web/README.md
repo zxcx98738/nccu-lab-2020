@@ -38,3 +38,7 @@ oc set env dc/credit-card-web TZ=Asia/Taipei
 # 設定語系
 oc set env dc/credit-card-web LC_ALL=en_US.utf8
 ```
+- 佈署應用
+```
+oc start-build bc/credit-card-web --from-dir ./dist/credit-card-web/
+```
