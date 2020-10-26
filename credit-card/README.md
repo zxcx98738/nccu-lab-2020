@@ -6,7 +6,7 @@
 ```
 http://credit-card-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/swagger-ui.html#/credit-card-controller
 ```
-
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/credit-card-swagger.PNG)
 ## H2 Console
 JDBC URL
 ```
@@ -16,6 +16,7 @@ Console url
 ```
 http://credit-card-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/h2-console/
 ```
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/credit-card-h2-console.PNG)
 
 ## 佈署方式
 1.使用 git clone nccu-lab-2020 至本機，並切換至 credit-card 目錄  
