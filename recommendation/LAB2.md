@@ -96,4 +96,14 @@ oc create -f pipeline.yaml
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
 
 ## 設定Webhook
-再有Pipeline的情況下上版還是需要用手去按，整合Webhook 後
+再有Pipeline的情況下上版還是需要用手去按，整合Webhook後在程式碼異動後將自動觸發流程，進一步加速團隊的開發協作速度。
+1.執行以下指令為pipeline 加入 webhook
+```
+oc set triggers bc/recommendation-pipeline --from-webhook
+```
+2.你將會拿到啟動Pipeline的API，嘗試在利用Postman 上利用POST Method 呼叫，你會發現Pipeline被啟動了
+```
+oc describe bc/recommendation-pipeline
+```
+
+3.
