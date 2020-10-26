@@ -19,6 +19,10 @@ npm i
 ng build 
 ```
 4.佈署至RedHat OpenShift
+- 切換專案至 nccu-lab2-common
+```
+oc project nccu-lab2-common
+```
 - 產生 build config，基底映像檔使用httpd
 ```
 oc new-build --name=credit-card-web httpd:latest --binary=true
